@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Testing websockets</title>
+    <script type="text/javascript" src="../js/websocket.js"></script>
+</head>
+<body>
+<div>
+    <input type="submit" value="Start" onclick="start()" />
+</div>
+<div id="messages"></div>
+<!--<script type="text/javascript">-->
+    <!--var webSocket =-->
+        <!--new WebSocket('ws://localhost:8080/websocket');-->
+
+    <!--webSocket.onerror = function(event) {-->
+        <!--onError(event)-->
+    <!--};-->
+
+    <!--webSocket.onopen = function(event) {-->
+        <!--onOpen(event)-->
+    <!--};-->
+
+    <!--webSocket.onmessage = function(event) {-->
+        <!--onMessage(event)-->
+    <!--};-->
+
+    <!--function onMessage(event) {-->
+        <!--document.getElementById('messages').innerHTML-->
+            <!--+= '<br />' + event.data;-->
+    <!--}-->
+
+    <!--function onOpen(event) {-->
+        <!--document.getElementById('messages').innerHTML-->
+            <!--= 'Connection established';-->
+    <!--}-->
+
+    <!--function onError(event) {-->
+        <!--alert(event.data);-->
+    <!--}-->
+
+    <!--function start() {-->
+        <!--webSocket.send('hello');-->
+        <!--return false;-->
+    <!--}-->
+
+    <!--window.setInterval(function(){ //每隔5秒钟发送一次心跳，避免websocket连接因超时而自动断开-->
+        <!--var ping = {"type":"ping"};-->
+        <!--webSocket.send(JSON.stringify(ping));-->
+    <!--},5000);-->
+
+<!--</script>-->
+</body>
+</html>
